@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Montserrat:wght@100;200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Montserrat:wght@100&display=swap");
+* {
+  font-family: "Montserrat", "Raleway", "Lato", sans-serif;
+  color: white;
+}
+
+.card {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  margin: 30px;
+  background: linear-gradient(
+    246.7deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
+  border-top: 0.1px solid rgba(255, 255, 255, 0.8);
+  border-right: 1px solid rgba(255, 255, 255, 0.8);
+}
+.MyPhoto {
+  width: 10%;
+  position: absolute;
+}
+
+.job {
+  padding-bottom: 5px;
+}
+.head-content {
+  font-size: 10px;
+}
+.head {
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+.card .content {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto !important;
+  background-image: url("../images/Artwork.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 120px;
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    padding: 48px;
+  }
+}
+
+/* @media screen and (min-width: 200px) {
+  .card {
+    width: 180px;
+    height: 120px;
+  }
+} */
+@media screen and (max-width: 300px) {
+  .card {
+    width: 201px;
+    height: 134px;
+  }
+  .head {
+    font-size: 10px;
+    padding-bottom: 2px;
+  }
+  .head-content {
+    font-size: 8px;
+  }
+  .job {
+    font-size: 9px;
+    padding-bottom: 2px;
+  }
+  .card .content {
+    bottom: 0px;
+    left: 0px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .card {
+    width: 450px;
+    height: 300px;
+  }
+}
